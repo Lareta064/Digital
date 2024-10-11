@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const bodyEl = document.body;
+	const pageHeader = document.querySelector('.header');
 	const menuToggle = document.querySelector('#menu-toggle');
 	const headerMenu = document.querySelector('#menu');
 
@@ -17,5 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			
 		}
 	});
+	window.addEventListener('scroll', ()=>{
+		if(window.scrollY > 40){
+			pageHeader.classList.add('header-fixed');
+		}
+		else{
+			pageHeader.classList.remove('header-fixed');
+		}
+	})
 
 });

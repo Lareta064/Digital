@@ -87,12 +87,13 @@
 	align-items: center;
 }
 .header{
-	background-color: rgba(77, 0, 171, .7);
+	background-color: transparent;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 5;
+	transition: background-color .3s; 
 	&-top{
 		height: 100px;
 		align-items: flex-end;padding-bottom: 5px;
@@ -109,6 +110,7 @@
 		.container{justify-content: space-between;}
 		}
 	}
+	&.header-fixed{background-color: rgba(77, 0, 171, .7);}
 }
 
 .header-menu{

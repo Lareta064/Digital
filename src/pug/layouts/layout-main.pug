@@ -7,35 +7,7 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		script(src='https://code.createjs.com/1.0.0/createjs.min.js')
-		script(src='./js/digital_nomad_animation.js')
-		script.
-			var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-			function init() {
-				canvas = document.getElementById("canvas");
-				anim_container = document.getElementById("animation_container");
-				dom_overlay_container = document.getElementById("dom_overlay_container");
-				var comp=AdobeAn.getComposition("B6B93CD006A5EF438F431B595F5B8317");
-				var lib=comp.getLibrary();
-				handleComplete({},comp);
-			}
-			function handleComplete(evt,comp) {
-				//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage
-				var lib=comp.getLibrary();
-				var ss=comp.getSpriteSheet();
-				exportRoot = new lib.digital_nomad_animation();
-				stage = new lib.Stage(canvas);	
-				//Registers the "tick" event listener
-				fnStartAnimation = function() {
-					stage.addChild(exportRoot);
-					createjs.Ticker.framerate = lib.properties.fps;
-					createjs.Ticker.addEventListener("tick", stage);
-				}	    
-				//Code to support hidpi screens and responsive scaling
-				AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
-				AdobeAn.compositionLoaded(lib.properties.id);
-				fnStartAnimation();
-			}
+
 			
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
@@ -74,7 +46,7 @@ html(lang="ru")
 			
 		title !{title}
 		
-	body(onload="init();")
+	body
 		
 		block content
 		

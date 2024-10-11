@@ -1,3 +1,38 @@
 .hero{
-	background: url('../img/header_bg.svg');
+	background-image: url('../img/header_bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding-top: 240px;
+	padding-bottom: 40px;	
+	overflow: hidden;
+	.h1, h1, *{color: white}
+	.hero-title{
+		width:80%;
+		max-width: 700px;
+		&>*+*{margin-top: 30px;}
+		@media (max-width: 767px) {
+		 &>*+* {
+				margin-top: 15px;
+			}
+		 &> .button{margin-top: 30px;}
+		}
+	}
+	.hero-img{
+		margin-inline: auto;
+		width: 790px;
+		height: 425px;img, svg{
+			width: 100%;
+			height: 100%; object-fit: contain;
+		}
+		@media (max-width: 767px) {
+			   width: 414px;
+				height: 224px;
+				margin-left: 18px;
+				margin-top: 30px;
+		}
+	}
+	@media (max-width: 1023px) {
+	 padding-top: 120px;
+	}
 }

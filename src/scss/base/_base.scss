@@ -1,12 +1,9 @@
-@function remy($pxsize) {
 
-  @return calc(($pxsize/16))+rem;
-}
-* {
+*, *:before, *:after {
 	  box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
   }
   
   html {
@@ -96,4 +93,24 @@ select:-webkit-autofill:focus {
   padding-inline: 20px;
   margin: 0 auto;
   
+}
+/*typography*/
+h1, h2, h3, h4{font-weight: 400;}
+.h1, h1{
+  font-size: 70px;
+  line-height: 1;
+  font-family: $fs;
+  font-weight: 400;
+  @media (max-width: 767px) {
+  font-size: 40px;
+  line-height: 1.05;
+  }
+
+}
+.subtitle, .txt-20{
+  font-size: 20px;
+  @media (max-width: 767px) {
+  font-size: 16px;
+  }
+ 
 }

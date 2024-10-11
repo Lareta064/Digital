@@ -94,6 +94,14 @@ select:-webkit-autofill:focus {
   margin: 0 auto;
   
 }
+section{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 /*typography*/
 h1, h2, h3, h4{font-weight: 400;}
 .h1, h1{
@@ -109,7 +117,7 @@ h1, h2, h3, h4{font-weight: 400;}
   }
 
 }
-.h2{
+.h2, .h3, h3, h2{
   font-size: 50px;
   font-family: $fs;
   font-weight: 500;
@@ -118,6 +126,27 @@ h1, h2, h3, h4{font-weight: 400;}
   }
   
 }
+.h3, h3{
+  font-size: 45px;
+  font-weight: 400;
+  color: $accent;
+  margin-bottom: 20px;
+  
+    @media (max-width: 1023px) {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+}
+.h4, h4, .txt-22{
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 8px;
+  @media (max-width: 767px) {
+  font-size: 16px;
+  margin-bottom: 6px;
+  }
+}
+.txt-22{font-weight: 400; margin-bottom: 0;}
 .section-row{
   margin-bottom: 60px;
    display: flex;

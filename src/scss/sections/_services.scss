@@ -3,11 +3,26 @@
 	margin-top: -60px;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
+	.container{
+		position: relative;
+		z-index: 2;
+	}
 	@media (max-width: 767px) {
 	  padding-top: 110px;
 	}
 }
+
+.bg-decore {
+	position: absolute;
+	top: 40%;
+	
+	right: 100px;
+	svg {
+		width: 1000px;
+		height: 917px;
+	}
+}
+
 .service-card{
 	position: relative;
 	width: 475px;
@@ -81,7 +96,7 @@
 	}
 }
 .swiper-container{
-	width: calc(50vw + 50%);
+	width: calc(50vw + 50% - 10px);
 	overflow: hidden;
 	@media (max-width: 599px) {
 	 width: 100%;

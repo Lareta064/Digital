@@ -176,3 +176,7 @@ h1, h2, h3, h4{font-weight: 400;}
  
 }
 .bg-accent{background-color: $accent2;}
+.bg-white {
+  background-color: white;
+  h2, h1, h3, .h1, .h2{color: $blue;}
+}

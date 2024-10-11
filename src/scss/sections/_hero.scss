@@ -6,6 +6,8 @@
 	padding-top: 240px;
 	padding-bottom: 40px;	
 	overflow: hidden;
+	position: relative;
+	z-index: 2;
 	.h1, h1, *{color: white}
 	.hero-title{
 		width:80%;

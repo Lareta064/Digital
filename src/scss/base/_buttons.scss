@@ -1,0 +1,17 @@
+.button{
+	display: inline-flex;
+	padding-inline: 40px;
+	background-color: transparent;
+	height: 64px;
+    line-height: 62px;
+	border:2px solid $accent;
+	color: white;
+	font-size: 20px;
+	cursor:pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: .3s;
+	white-space: nowrap;
+	flex-shrink:0;
+	&:hover{color: $accent;}
+}

@@ -1,12 +1,9 @@
-@function remy($pxsize) {
 
-  @return calc(($pxsize/16))+rem;
-}
-* {
+*, *:before, *:after {
 	  box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
   }
   
   html {
@@ -97,3 +94,56 @@ select:-webkit-autofill:focus {
   margin: 0 auto;
   
 }
+/*typography*/
+h1, h2, h3, h4{font-weight: 400;}
+.h1, h1{
+  font-size: 70px;
+  line-height: 1;
+  font-family: $fs;
+  font-weight: 400;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+  font-size: 40px;
+  line-height: 1.05;
+  margin-bottom: 15px;
+  }
+
+}
+.h2{
+  font-size: 50px;
+  font-family: $fs;
+  font-weight: 500;
+  @media (max-width: 1023px) {
+    font-size: 34px;
+  }
+  
+}
+.section-row{
+  margin-bottom: 60px;
+   display: flex;
+  align-items: center;
+  column-gap: 120px;
+    
+      &__text {
+        width: 65%;
+        max-width: 650px;
+      }
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap:32px;
+    &__text{width: 100%;}
+        .button{align-self: center;;}
+  }
+  @media (max-width: 767px) {
+     margin-bottom: 98px;
+  }
+}
+.subtitle, .txt-20{
+  font-size: 20px;
+  @media (max-width: 767px) {
+  font-size: 16px;
+  }
+ 
+}
+.bg-accent{background-color: $accent2;}

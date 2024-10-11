@@ -1,0 +1,24 @@
+header.header
+	.header-top
+		.container
+			a(href="#!").logo
+				svg.svg-logo
+					use(href='./img/sprite.svg#svg-logo')
+			button.menu-toggle#menu-toggle
+				span
+	//===MENU ===
+	.header-menu#menu
+		.container
+			ul.header-menu-list
+				li
+					a(href="#!") Услуги
+				li
+					a(href="#!") Портфолио
+				li
+					a(href="#!") О нас
+			//===LANG : выбранный активный язык имеет класс active По этому классу название языка становится невидимым ===
+			ul.langs-list
+				li
+					a(href="#!") LV
+				li.active
+					a(href="#!") EN

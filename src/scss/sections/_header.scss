@@ -88,6 +88,11 @@
 }
 .header{
 	background-color: rgba(77, 0, 171, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
 	&-top{
 		height: 100px;
 		align-items: flex-end;padding-bottom: 5px;
@@ -110,6 +115,7 @@
 	height: 0;
 	overflow: hidden;
 	transition: .3s;
+	z-index: 5;
 	.container{
 		column-gap: 70px;
 		@media (max-width: 767px) {

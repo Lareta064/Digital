@@ -1,4 +1,10 @@
 *[class^="icon-"]{
 	display: inline-block;
 }
-
+.svg-whatsapp, .svg-tg, .svg-fb{
+	width: 25px;
+	height: 25px;
+	color: white;
+	transition: .3s; 
+	&:hover{color: $accent;}
+}

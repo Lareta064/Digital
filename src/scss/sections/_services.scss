@@ -7,6 +7,11 @@
 		position: relative;
 		z-index: 2;
 	}
+	.bg-decore {
+		top: 40%;
+		right: 100px;
+		
+	}
 	@media (max-width: 767px) {
 	  padding-top: 110px;
 	}
@@ -14,13 +19,15 @@
 
 .bg-decore {
 	position: absolute;
-	top: 40%;
-	
-	right: 100px;
+	width: 60%;
+	min-width: 500px;
+	max-height: 1000px;
+	aspect-ratio: 10 / 9;
 	svg {
-		width: 1000px;
-		height: 917px;
+		width: 100%;
+		height: 100%;
 	}
+	
 }
 
 .service-card{

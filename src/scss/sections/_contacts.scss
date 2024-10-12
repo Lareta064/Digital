@@ -1,0 +1,10 @@
+.contacts{
+	position: relative;
+	background-image: url('../img/footer_bg.svg');
+	background-position: top;
+	padding-top: 100px;
+	padding-bottom: 65px;
+	@media (max-width: 767px) {
+	 padding-top: 50px;
+	}
+}

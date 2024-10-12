@@ -180,7 +180,7 @@ h1, h2, h3, h4{font-weight: 400;}
   align-items: flex-start;
   column-gap: 120px;
     &+* {
-        margin-top: 60px;
+        margin-top: 20px;
       }
       &__text {
         width: 65%;
@@ -197,6 +197,12 @@ h1, h2, h3, h4{font-weight: 400;}
   @media (max-width: 767px) {
      &+*{margin-top: 98px;}
   }
+}
+.txt-right{
+  width: 100%;
+  max-width: 650px;
+  margin-left: auto;
+  
 }
 .subtitle, .txt-20{
   font-size: 20px;
@@ -231,4 +237,10 @@ h1, h2, h3, h4{font-weight: 400;}
 }
 .two-columns{
   grid-template-columns: 1fr 1fr;
+}
+.mt-120{
+  margin-top: 120px;
+  @media (max-width: 767px) {
+   margin-top: 60px;
+  }
 }

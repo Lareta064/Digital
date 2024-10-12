@@ -119,6 +119,7 @@
 .swiper-container{
 	width: calc(50vw + 50% - 10px);
 	overflow: hidden;
+	margin-top: 60px;
 	.service-card, .work-card{
 		width: 475px;
 		height: 325px;
@@ -133,6 +134,7 @@
 	}
 	@media (max-width: 599px) {
 	 width: 100%;
+	 margin-top: 100px;
 	}
 }
 .swiper-container .swiper-slide {

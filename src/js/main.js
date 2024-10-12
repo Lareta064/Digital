@@ -9,13 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (menuToggle.classList.contains('active')) {
 			 menuToggle.classList.remove('active');
 			 headerMenu.classList.remove('active');
-			
+			 if(window.innerWidth < 1024){
+				bodyEl.classList.remove('lock');
+			 }
 		
 		} else {
 			menuToggle.classList.add('active');
 			headerMenu.classList.add('active');
-			
-			
+			if(window.innerWidth < 1024){
+				bodyEl.classList.add('lock');
+			 }
 		}
 	});
 	window.addEventListener('scroll', ()=>{

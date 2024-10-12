@@ -41,6 +41,9 @@
 	position: relative;
 	// width: 475px;
 	// height: 325px;
+	width: 100%;
+	max-width: 475px;
+	aspect-ratio: 475/325;
 	border-radius: 5px;
 	overflow: hidden;
 	padding: 25px;
@@ -92,12 +95,17 @@
 		z-index: 2;
 		color: white;
 	}
-	@media (max-width: 699px) {
-		width: 100%;
-		max-width: 475px;
+	@media (max-width: 767px) {
 		margin-left: auto;
 		margin-right: auto;
-		height: auto;
+
+	}
+	@media (max-width: 699px) {
+		// width: 100%;
+		// max-width: 475px;
+		// margin-left: auto;
+		// margin-right: auto;
+		// height: auto;
 		aspect-ratio: 16/11;
 	  .service-card__icon{
 		width: 192px;
@@ -114,6 +122,14 @@
 	.service-card, .work-card{
 		width: 475px;
 		height: 325px;
+		@media (max-width: 699px) {
+			width: 100%;
+			max-width: 475px;
+			margin-left: auto;
+			margin-right: auto;
+			height: auto;
+			aspect-ratio: 16/11;
+		}
 	}
 	@media (max-width: 599px) {
 	 width: 100%;

@@ -97,6 +97,18 @@ select:-webkit-autofill:focus {
   margin: 0 auto;
   
 }
+.inner-main{
+  padding-top: 140px;
+  padding-bottom: 70px;
+  background-color: $accent2;
+  @media (max-width: 1199px) {
+   padding-top: 100px;
+   padding-bottom: 35px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
+}
 section{
   padding-top: 90px;
   padding-bottom: 90px;
@@ -213,6 +225,7 @@ h1, h2, h3, h4{font-weight: 400;}
   }
 
   @media (max-width: 767px) {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 }

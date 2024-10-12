@@ -1,7 +1,10 @@
 .work-card{
 	position: relative;
-	width: 475px;
-	height: 325px;
+	// width: 475px;
+		// height: 325px;
+		width: 100%;
+		max-width: 475px;
+		aspect-ratio: 475/325;
 	border-radius: 5px;
 	overflow: hidden;
 	&__img{
@@ -25,14 +28,19 @@
 		z-index: 3;
 		color: white;
 	}
-	@media (max-width: 699px) {
-		width: 100%;
-		max-width: 475px;
-		margin-left: auto;
-		margin-right: auto;
-		height: auto;
-		aspect-ratio: 16/11;
+	@media (max-width: 767px) {
+	  margin-left: auto;
+	  margin-right: auto;
+	  
 	}
+		// @media (max-width: 699px) {
+		// 	width: 100%;
+		// 	max-width: 475px;
+		// 	margin-left: auto;
+		// 	margin-right: auto;
+		// 	height: auto;
+		// 	aspect-ratio: 16/11;
+		// }
 
 	@media (max-width: 767px) {
 		.txt-20{

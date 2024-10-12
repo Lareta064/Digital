@@ -1,0 +1,30 @@
+section.connect
+	.container
+		h1.h1 Let's talk!
+		.w-650.section-txt
+			p Мы поможем в привлечении новых клиентов и продажах через оптимизацию IT-решений. Давайте сотрудничать!
+			p Приходи к нам в гости по адресу Рига, Brīvības iela 1Cвяжись с нами по телефону +371 2222 3333 или пиши на info@digitalnomad.com. Mы предоставим Тебе профессиональную бесплатную консультацию.
+			p Или оставь  свои контакты и мы свяжемся с тобой!
+		
+		.w-650.form-wrapper.txt-right
+			form.contacts-form(action="" method="method")
+				.form-item
+					input(type="text" name="" placeholder="Name")
+				.form-item
+					input(type="text" name="" placeholder="Email")
+				.form-item
+					input(type="text" name="" placeholder="Phone")
+				
+				.form-item
+					.dropdown
+						input.dropdown__input-hidden(type="hidden" name="theme")
+						button.dropdown__button(type="button")
+							span Theme
+						.dropdown__list
+							ul
+								li.dropdown__list-item(data-value="Theme_1") Theme 1
+								li.dropdown__list-item(data-value="Theme_2") Theme 2
+								li.dropdown__list-item(data-value="Theme_3") Theme 3
+								li.dropdown__list-item(data-value="Theme_4") Theme 4
+				.form-btn
+					button(type="submit").button Send

@@ -1,9 +1,14 @@
 .hero
+	
 	.container
+		
 		.hero-title
 			h1 Creativity and technology for digital excellence
 			h2.subtitle Мы трансформируем рекламную индустрию совместно с брендами<br>Воплощаем технически масштабные и многофункциональные проекты<br>Решаем творчески самые амбициозные задачи для бизнеса
 			a(href="#!").button Начать разговор
-		.hero-img
-			svg.svg-header-img
-				use(href='./img/header-img.svg#header-img')
+	
+		//- svg.svg-header-img
+		//- 	use(href='./img/header-img.svg#header-img')
+	#animation_container.hero-animation(style='width:1000px; height:600px')
+		canvas#canvas(width='1000' height='600' style='position: absolute; display: block;')
+		#dom_overlay_container(style='pointer-events:none; overflow:hidden; width:1000px; height:600px; position: absolute; left: 0px; top: 0px; display: block;')

@@ -188,7 +188,7 @@ p.nominalBounds = new cjs.Rectangle(-25,-131.3,72.8,10.300000000000011);
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-27.4,9.1,49.099999999999994,22.200000000000003);
+p.nominalBounds = new cjs.Rectangle(-27.4,9,49.099999999999994,22.2);
 
 
 (lib.phone_screen_bg = function(mode,startPosition,loop) {

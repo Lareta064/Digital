@@ -10,6 +10,35 @@ html(lang="ru")
 		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
+		script(src='https://code.createjs.com/1.0.0/createjs.min.js')
+		script(src='./js/digital_nomad_animation.js')
+		script.
+			var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+			function init() {
+				canvas = document.getElementById("canvas");
+				anim_container = document.getElementById("animation_container");
+				dom_overlay_container = document.getElementById("dom_overlay_container");
+				var comp=AdobeAn.getComposition("B6B93CD006A5EF438F431B595F5B8317");
+				var lib=comp.getLibrary();
+				handleComplete({},comp);
+			}
+			function handleComplete(evt,comp) {
+				
+				var lib=comp.getLibrary();
+				var ss=comp.getSpriteSheet();
+				exportRoot = new lib.digital_nomad_animation();
+				stage = new lib.Stage(canvas);	
+				
+				fnStartAnimation = function() {
+					stage.addChild(exportRoot);
+					createjs.Ticker.framerate = lib.properties.fps;
+					createjs.Ticker.addEventListener("tick", stage);
+				}	    
+				
+				AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
+				AdobeAn.compositionLoaded(lib.properties.id);
+				fnStartAnimation();
+			}
 		link(rel="stylesheet", href="css/main.css")
 		style.
 
@@ -45,7 +74,7 @@ html(lang="ru")
 			
 		title !{title}
 		
-	body
+	body(onload="init();" )
 		
 		block content
 		

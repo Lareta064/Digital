@@ -59,6 +59,7 @@
 	height: auto;
 	vertical-align: middle;
   object-fit: cover;
+  border-radius: 5px;
   }
   
   input,
@@ -198,11 +199,10 @@ h1, h2, h3, h4{font-weight: 400;}
      &+*{margin-top: 98px;}
   }
 }
-.txt-right{
-  width: 100%;
+.txt-right{ margin-left: auto;}
+.w-650{
+   width: 100%;
   max-width: 650px;
-  margin-left: auto;
-  
 }
 .subtitle, .txt-20{
   font-size: 20px;

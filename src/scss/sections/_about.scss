@@ -1,0 +1,28 @@
+ .w-650{
+	img{
+		width: 100%;
+		aspect-ratio: 65/37;
+	}
+ }
+ .section-img{
+	margin-block: 30px;
+ }
+ .contacts-block{
+	padding-top: 248px;
+	@media (max-width: 1364px) {
+	 padding-top: 120px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 60px;
+	}
+}
+ .contacts-block__content {
+ 	p {
+ 		margin-bottom: 20px;
+ 	}
+
+ 	.link {
+ 		display: block;
+		padding-block: 3px;
+ 	}
+ }

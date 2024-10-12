@@ -5,14 +5,4 @@
 		margin-bottom: 40px;
 	}
 }
-.grid-three-columns{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 50px;
-	@media (max-width: 1199px) {gap: 30px;}
-	@media (max-width: 1023px) {gap: 16px;grid-template-columns: 1fr}
-	@media (max-width: 767px) { gap: 16px;}
-}
-.why-us__item{
-	// &>*+*{margin-top: 6px;}
-}
+

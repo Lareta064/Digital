@@ -9,16 +9,14 @@
 	}
 	.bg-decore {
 		top: 40%;
-		svg{
-			position: relative;
-			right: 100px;
-		}
+		right: 100px;
 		
 	}
 	@media (max-width: 767px) {
 	  padding-top: 110px;
 	  .bg-decore{
 		top:70px;
+		right: 0;
 		svg{right: -45%;}
 	  }
 	}
@@ -41,8 +39,8 @@
 
 .service-card{
 	position: relative;
-	width: 475px;
-	height: 325px;
+	// width: 475px;
+	// height: 325px;
 	border-radius: 5px;
 	overflow: hidden;
 	padding: 25px;
@@ -113,6 +111,10 @@
 .swiper-container{
 	width: calc(50vw + 50% - 10px);
 	overflow: hidden;
+	.service-card, .work-card{
+		width: 475px;
+		height: 325px;
+	}
 	@media (max-width: 599px) {
 	 width: 100%;
 	}

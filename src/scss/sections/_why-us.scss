@@ -2,7 +2,7 @@
 .why-us{
 	background-color: #651EC0;
 	.grid-three-columns {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
 }
 .grid-three-columns{
@@ -14,5 +14,5 @@
 	@media (max-width: 767px) { gap: 16px;}
 }
 .why-us__item{
-	&>*+*{margin-top: 10px;}
+	// &>*+*{margin-top: 6px;}
 }

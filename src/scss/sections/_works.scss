@@ -43,3 +43,8 @@
 
 	}
 }
+.works .h1, .works h2{
+	@media (min-width: 1200px) {
+		margin-bottom: 60px;
+	}
+}

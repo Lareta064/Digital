@@ -3,7 +3,7 @@
 	padding-inline: 40px;
 	background-color: transparent;
 	height: 64px;
-    line-height: 62px;
+    line-height: 60px;
 	border:2px solid $accent;
 	color: white;
 	font-size: 20px;
@@ -14,4 +14,10 @@
 	white-space: nowrap;
 	flex-shrink:0;
 	&:hover{color: $accent;}
+	@media (max-width: 767px) {
+	 height: 51px;
+	 line-height: 47px;
+	 font-size: 16px;
+	padding-inline: 32px;
+	}
 }

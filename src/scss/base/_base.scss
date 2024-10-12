@@ -21,6 +21,9 @@
   font-size: 20px;
   line-height: 1.2;
 	-webkit-font-smoothing: antialiased;
+  @media (max-width: 767px) {
+  font-size: 16px;
+  }
 
   }
   .lock {
@@ -178,7 +181,7 @@ h1, h2, h3, h4{font-weight: 400;}
     align-items: flex-start;
     row-gap:32px;
     &__text{width: 100%;}
-        .button{align-self: center;;}
+    .button{align-self: center;}
   }
   @media (max-width: 767px) {
      &+*{margin-top: 98px;}

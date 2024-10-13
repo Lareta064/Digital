@@ -118,7 +118,7 @@
 	overflow: hidden;
 	transition: .3s;
 	z-index: 5;
-	background-color: rgba(77, 0, 171, 0.7);
+	
 	.container{
 		column-gap: 70px;
 		@media (max-width: 767px) {
@@ -134,6 +134,9 @@
 		@media (max-width: 767px) {
 		 height:calc(100vh - 45px);
 		}
+	}
+	@media (max-width: 1023px) {
+	background-color: rgba(77, 0, 171, 0.9);
 	}
 }
 .header-menu-list{

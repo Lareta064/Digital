@@ -21,11 +21,13 @@
   font-size: 20px;
   line-height: 1.2;
 	-webkit-font-smoothing: antialiased;
+  
   @media (max-width: 767px) {
   font-size: 16px;
   }
 
   }
+  // body{opacity: 0; transition: opacity .7s; }
   .lock {
 	overflow: hidden;
 	touch-action: none;
@@ -200,9 +202,7 @@ h1, h2, h3, h4{font-weight: 400;}
     &__text{width: 100%;}
     .button{align-self: center;}
   }
-  @media (max-width: 767px) {
-     &+*{margin-top: 98px;}
-  }
+  
 }
 .txt-right{ margin-left: auto;}
 .w-650{

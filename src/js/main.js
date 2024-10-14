@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	const pageHeader = document.querySelector('.header');
 	const menuToggle = document.querySelector('#menu-toggle');
 	const headerMenu = document.querySelector('#menu');
-
+	// setTimeout(function(){
+	// 	bodyEl.style.opacity = 1;	
+	// }, 300);
+	$('.lazy').lazy();
+	
 	menuToggle.addEventListener('click', ()=> {
 		
 		if (menuToggle.classList.contains('active')) {

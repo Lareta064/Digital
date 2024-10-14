@@ -7,6 +7,7 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		meta(name='theme-color' content='rgb(77, 0, 171)')
 		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
@@ -39,39 +40,13 @@ html(lang="ru")
 				AdobeAn.compositionLoaded(lib.properties.id);
 				fnStartAnimation();
 			}
-		link(rel="stylesheet", href="css/main.css")
+		
+		//===шрифты===
 		style.
-
-			@font-face{
-				font-family: 'Roboto';
-				src: url(./fonts/Roboto-Regular.woff2) format("woff2");
-				font-weight: 400;
-				font-style: normal;
-				font-display: swap;
-			}
-			@font-face{
-				font-family: 'Roboto';
-				src: url(./fonts/Roboto-Bold.woff2) format("woff2");
-				font-weight: 700;
-				font-style: normal;
-				font-display: swap;
-			}
-			@font-face{
-				font-family: 'FiraSansExtraCondensed';
-				src: url(./fonts/FiraSansExtraCondensed-Regular.woff2) format("woff2");
-				font-weight: 400;
-				font-style: normal;
-				font-display: swap;
-			}
-			@font-face{
-				font-family: 'FiraSansExtraCondensed';
-				src: url(./fonts/FiraSansExtraCondensed-Medium.woff2) format("woff2");
-				font-weight: 500;
-				font-style: normal;
-				font-display: swap;
-			}
+			@font-face{font-family:'Roboto';src:url(./fonts/Roboto-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Roboto';src:url(./fonts/Roboto-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'FiraSansExtraCondensed';src:url(./fonts/FiraSansExtraCondensed-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'FiraSansExtraCondensed';src:url(./fonts/FiraSansExtraCondensed-Medium.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+			link(rel="stylesheet", href="css/main.css")
 			
-			
+		link(rel="stylesheet", href="css/main.css")
 		title !{title}
 		
 	body(onload="init();" )

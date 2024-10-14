@@ -12,6 +12,9 @@
 		right: 100px;
 		
 	}
+	.swiper-container{
+		margin-top: 120px;
+	}
 	@media (max-width: 767px) {
 	  padding-top: 110px;
 	  .bg-decore{
@@ -19,6 +22,7 @@
 		right: 0;
 		svg{right: -45%;}
 	  }
+	.swiper-container {margin-top: 100px; }
 	}
 }
 
@@ -28,6 +32,7 @@
 	min-width: 500px;
 	max-width: 1000px;
 	overflow: hidden;
+	pointer-events: none;
 	aspect-ratio: 10 / 9;
 	right: 0;
 	svg {
@@ -119,7 +124,8 @@
 .swiper-container{
 	width: calc(50vw + 50% - 10px);
 	overflow: hidden;
-	
+	margin-top: 15px;
+	margin-bottom: 15px;
 	.service-card, .work-card{
 		width: 475px;
 		height: 325px;

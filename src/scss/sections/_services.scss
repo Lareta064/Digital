@@ -80,6 +80,8 @@
 		position: relative;
 		z-index: 2;
 		flex-shrink: 0;
+		transition: .3s; 
+		&:hover{opacity: .5;}
 
 	}
 	.service-card__icon{
@@ -89,16 +91,22 @@
 		overflow: hidden;
 		right: 10px;
 		bottom: -40px;
+		z-index: 1;
 		img, svg{
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
 		}
 	}
-	.service-card__txt{
+	object a{
 		position: relative;
 		z-index: 2;
 		color: white;
+		font-size: 20px;
+		line-height: 1.3;
+		display: block;
+		width: fit-content;
+		&:hover{color: $accent;opacity: 1;}
 	}
 	@media (max-width: 767px) {
 		margin-left: auto;

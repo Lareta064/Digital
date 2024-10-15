@@ -179,9 +179,12 @@ h1, h2, h3, h4{font-weight: 400;}
  font-size: 14px;
 }
 .link{
-   display: inline-block;
+  display: inline-flex;
+  column-gap:6px;
+  align-items: center;
   transition: .3s; 
-  &:hover{opacity: .7;}
+  svg{transition: .3s; }
+  &:hover{color: $accent; svg{color: $accent}}
 }
 .section-row{
    display: flex;

@@ -5,9 +5,20 @@ section.contacts
 			.section-row__text
 				p Мы поможем в привлечении новых клиентов и продажах через оптимизацию IT-решений. Давайте сотрудничать!
 				.flex-row
-					address Brīvības iela 1, Rīga 
-					a(href="tel:37122223333 ").link +371 2222 3333
-					a(href="mailto:info@digitalnomad.com").link info@digitalnomad.com
+					a(href="https://yandex.ru/maps/?um=constructor%3A5d08c7650fbbaa411cf51e6d0f906e23124c7abba7b39a55d82cc6d4b55db9a0&source=constructorLink" target="_blank").link
+						svg.svg-pin
+							use(href='./img/sprite.svg#svg-pin')
+							span Brīvības iela 1, Rīga 
+					
+					a(href="tel:37122223333 ").link 
+						svg.svg-phone
+							use(href='./img/sprite.svg#svg-phone')
+						span +371 2222 3333
+					
+					a(href="mailto:info@digitalnomad.com").link 
+						svg.svg-email
+							use(href='./img/sprite.svg#svg-email')
+						span info@digitalnomad.com
 			
 			a(href="connect.html").button Заказать звонок
 

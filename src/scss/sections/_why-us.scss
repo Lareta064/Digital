@@ -6,4 +6,22 @@
 	}
 }
 .inner-main  .why-us{z-index: 1!important;}
+.why-us__icon{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	svg{
+		width: 150px;
+		height: 150px;
+	
+		@media (max-width: 1364px) {
+			width: 100px;
+			height: 100px;
+		}
+		@media (max-width: 1364px) {
+			width:80px;
+			height: 80px;
+		}
+	}
+}
 

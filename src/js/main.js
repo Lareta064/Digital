@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				dropDownBtn.innerText = this.innerText;
 				dropDownBtn.focus();
 				dropDownInput.value = this.dataset.value;
-				dropDownList.classList.remove('dropdown__list--visible');
+				dropDownList.style.height ='0';
 				dropDownBtn.classList.remove('dropdown__button--active');
 				
 			});
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.addEventListener('click', function (e) {
 			if (e.target !== dropDownBtn) {
 				dropDownBtn.classList.remove('dropdown__button--active');
-				dropDownList.classList.remove('dropdown__list--visible');
+				dropDownList.style.height ='0';
 			}
 		});
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.addEventListener('keydown', function (e) {
 			if (e.key === 'Tab' || e.key === 'Escape') {
 				dropDownBtn.classList.remove('dropdown__button--active');
-				dropDownList.classList.remove('dropdown__list--visible');
+				dropDownList.style.height ='0';
 			}
 		});
 	});
